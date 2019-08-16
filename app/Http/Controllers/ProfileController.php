@@ -37,7 +37,7 @@ class ProfileController extends Controller
             // make image name based on username and current timestamp
             $name = str_slug($request->input('name')).'_'.time();
             // define folder path
-            $folder = '/uploads/images';
+            $folder = '/uploads/images/';
             // make file path where image will be stored [folder path + file name + file extension]
             $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
             // upload the image
