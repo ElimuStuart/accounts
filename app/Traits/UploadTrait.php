@@ -1,9 +1,11 @@
+<?php
+
 namespace App\Traits;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 
-trait UploadTratit
+trait UploadTrait
 {
     public function uploadOne(UploadedFile $uploadedFile, $folder = null, $disk = 'public', $filename = null) 
     {
@@ -14,3 +16,4 @@ trait UploadTratit
         return $file;
     }
 }
+
